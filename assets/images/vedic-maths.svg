@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" rx="36" fill="#F1ECFF"/>
+  <circle cx="400" cy="300" r="210" fill="#FFFFFF" stroke="#5736A8" stroke-width="4" stroke-dasharray="12 10"/>
+  <circle cx="400" cy="300" r="145" fill="#E8F5FF"/>
+  <!-- Vedic Circle / Sutra Geometry -->
+  <polygon points="400,115 560,390 240,390" stroke="#5736A8" stroke-width="5" fill="#FFC83D" fill-opacity="0.28"/>
+  <polygon points="400,485 560,210 240,210" stroke="#FF786B" stroke-width="5" fill="none"/>
+  <circle cx="400" cy="300" r="56" fill="#5736A8"/>
+  <text x="400" y="312" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="34" fill="#FFC83D">108</text>
+  <!-- Orbiting Numbers -->
+  <circle cx="400" cy="90" r="32" fill="#FFC83D"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="22" fill="#25233A">9×</text>
+  <circle cx="605" cy="300" r="32" fill="#FF786B"/>
+  <text x="605" y="310" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">11²</text>
+  <circle cx="195" cy="300" r="32" fill="#5736A8"/>
+  <text x="195" y="310" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">25²</text>
+</svg>
+

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" rx="36" fill="#E8F5FF"/>
+  <circle cx="650" cy="110" r="90" fill="#FFC83D" fill-opacity="0.35"/>
+  <circle cx="130" cy="490" r="110" fill="#5736A8" fill-opacity="0.14"/>
+  <!-- Modern Wooden/Purple Abacus Frame -->
+  <rect x="140" y="130" width="520" height="320" rx="28" fill="#5736A8"/>
+  <rect x="164" y="154" width="472" height="272" rx="18" fill="#FFFFFF"/>
+  <!-- Horizontal Bar -->
+  <rect x="164" y="246" width="472" height="16" fill="#25233A"/>
+  <!-- Vertical Rods -->
+  <g stroke="#CFCBE3" stroke-width="6">
+    <line x1="230" y1="154" x2="230" y2="426"/>
+    <line x1="315" y1="154" x2="315" y2="426"/>
+    <line x1="400" y1="154" x2="400" y2="426"/>
+    <line x1="485" y1="154" x2="485" y2="426"/>
+    <line x1="570" y1="154" x2="570" y2="426"/>
+  </g>
+  <!-- Upper Beads (Value 5) -->
+  <rect x="202" y="200" width="56" height="32" rx="16" fill="#FF786B"/>
+  <rect x="287" y="168" width="56" height="32" rx="16" fill="#FFC83D"/>
+  <rect x="372" y="200" width="56" height="32" rx="16" fill="#FF786B"/>
+  <rect x="457" y="168" width="56" height="32" rx="16" fill="#FFC83D"/>
+  <rect x="542" y="200" width="56" height="32" rx="16" fill="#FF786B"/>
+  <!-- Lower Beads (Value 1 each) -->
+  <rect x="202" y="274" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="202" y="310" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="202" y="378" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="287" y="274" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="287" y="346" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="287" y="382" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="372" y="274" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="372" y="310" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="372" y="346" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="457" y="310" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="457" y="346" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="457" y="382" width="56" height="30" rx="15" fill="#5736A8"/>
+  <rect x="542" y="274" width="56" height="30" rx="15" fill="#FFC83D"/>
+  <rect x="542" y="346" width="56" height="30" rx="15" fill="#5736A8"/>
+  <!-- Floating Math Badges -->
+  <rect x="82" y="92" width="96" height="52" rx="16" fill="#FFC83D"/>
+  <text x="130" y="126" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="24" fill="#25233A">+ 24</text>
+  <rect x="612" y="422" width="112" height="56" rx="18" fill="#FF786B"/>
+  <text x="668" y="458" text-anchor="middle" font-family="Outfit, sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">× 11</text>
+</svg>
+

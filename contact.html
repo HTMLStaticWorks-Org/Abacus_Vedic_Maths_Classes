@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MindSpark Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+  <div id="ms-public-header"></div>
+
+  <main>
+    <section class="section-pad bg-lavender-ms">
+      <div class="container-ms text-center mx-auto" style="max-width:760px;">
+        <span class="badge-demo mb-2">Editable Sample Contact Details</span>
+        <h1 class="display-3 fw-black mb-3 gs-hero-stagger">Let's Start Your Child's Learning Journey.</h1>
+        <p class="lead text-secondary-ms mb-0">Have questions about Abacus levels, Vedic Maths, or a Free Demo Class? Reach out to our admissions team.</p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container-ms">
+        <div class="row g-4 mb-5">
+          <div class="col-sm-6 col-lg-3">
+            <div class="ms-card">
+              <div class="ms-icon-box" style="background:var(--bg-lavender);color:var(--ms-purple);"><i data-lucide="phone"></i></div>
+              <h5>Phone (Sample)</h5>
+              <p class="small text-secondary-ms mb-0">+1 (555) 234-8910</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="ms-card">
+              <div class="ms-icon-box" style="background:rgba(255,200,61,0.25);color:#8A5D00;"><i data-lucide="mail"></i></div>
+              <h5>Email (Sample)</h5>
+              <p class="small text-secondary-ms mb-0">hello@mindspark.demo</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="ms-card">
+              <div class="ms-icon-box" style="background:rgba(255,120,107,0.2);color:var(--ms-coral);"><i data-lucide="map-pin"></i></div>
+              <h5>Academy Address</h5>
+              <p class="small text-secondary-ms mb-0">420 Learning Way, Austin, TX (Editable Sample)</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="ms-card">
+              <div class="ms-icon-box" style="background:var(--bg-sky);color:#1D6FA5;"><i data-lucide="clock"></i></div>
+              <h5>Hours &amp; WhatsApp</h5>
+              <p class="small text-secondary-ms mb-0">Mon–Sat: 9 AM – 7 PM • WhatsApp Demo Support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="ms-card p-4 p-lg-5">
+              <h3 class="mb-2">Book a Free Demo Class or Send an Enquiry</h3>
+              <p class="small text-muted-ms mb-4">Submits via jQuery AJAX-style demo simulation (no backend required).</p>
+
+              <form id="contact-enquiry-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Parent Name *</label>
+                    <input type="text" id="c-parent" class="form-control" required placeholder="Full Name">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Child Name *</label>
+                    <input type="text" id="c-child" class="form-control" required placeholder="Child's Name">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Email *</label>
+                    <input type="email" id="c-email" class="form-control" required placeholder="parent@example.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label small fw-bold">Phone *</label>
+                    <input type="tel" id="c-phone" class="form-control" required placeholder="+1 555 234 8910">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label small fw-bold">Child Age *</label>
+                    <input type="number" id="c-age" class="form-control" min="4" max="17" required placeholder="e.g. 9">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label small fw-bold">Interested Program *</label>
+                    <select id="c-program" class="form-select" required>
+                      <option value="Abacus">Abacus Program</option>
+                      <option value="Vedic Maths">Vedic Mathematics</option>
+                      <option value="Both">Both / Guidance Needed</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label small fw-bold">Learning Mode *</label>
+                    <select id="c-mode" class="form-select" required>
+                      <option value="Online">Online Live</option>
+                      <option value="Offline">In-Center</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small fw-bold">Message *</label>
+                    <textarea id="c-msg" class="form-control" rows="4" required placeholder="Tell us about your child's grade or preferred timing..."></textarea>
+                  </div>
+                  <div class="col-12 mt-3 d-flex flex-wrap align-items-center gap-3">
+                    <button type="submit" id="c-submit-btn" class="btn-ms btn-ms-primary">
+                      <span id="c-btn-text">Send Demo Enquiry</span>
+                    </button>
+                    <div id="c-spinner" class="spinner-border spinner-border-sm text-purple d-none" role="status"></div>
+                  </div>
+                </div>
+                <div id="c-feedback" class="mt-3"></div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column gap-4">
+            <div class="ms-card p-4 flex-fill justify-content-between" style="background:var(--bg-sky);">
+              <div>
+                <span class="badge-pill-ms mb-3">Academy Location (Map Placeholder)</span>
+                <h4>MindSpark Learning Center</h4>
+                <p class="small text-secondary-ms">420 Learning Way, Suite 210, Austin, TX 78701 (Editable Sample Address)</p>
+              </div>
+              <div class="rounded-4 border d-flex flex-column align-items-center justify-content-center p-4 text-center my-3" style="min-height:200px;background:var(--bg-surface);">
+                <i data-lucide="map" class="text-purple mb-2" style="width:40px;height:40px;"></i>
+                <div class="fw-bold">Interactive Map Embed Placeholder</div>
+                <div class="small text-muted-ms">Replace with Google Maps iframe for production</div>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="https://wa.me/15552348910" target="_blank" rel="noopener" class="btn-ms btn-ms-yellow py-2 px-3">WhatsApp Demo</a>
+                <a href="login.html" class="btn-ms btn-ms-outline py-2 px-3">Parent Portal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="ms-public-footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/demo-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(function () {
+      $("#contact-enquiry-form").on("submit", function (e) {
+        e.preventDefault();
+        const form = this;
+        const $fb = $("#c-feedback");
+        if (!form.checkValidity()) {
+          $fb.html('<div class="alert alert-danger mb-0">Please fill in all required fields accurately.</div>');
+          return;
+        }
+        $("#c-submit-btn").prop("disabled", true);
+        $("#c-btn-text").text("Sending...");
+        $("#c-spinner").removeClass("d-none");
+
+        // AJAX-style demo submission simulation
+        setTimeout(function () {
+          $("#c-submit-btn").prop("disabled", false);
+          $("#c-btn-text").text("Send Demo Enquiry");
+          $("#c-spinner").addClass("d-none");
+          $fb.html('<div class="alert alert-success mb-0">Thank you! Your demo enquiry &amp; Free Demo Class request has been recorded in demo mode.</div>');
+          form.reset();
+        }, 700);
+      });
+    });
+  </script>
+</body>
+</html>
+

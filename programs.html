@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | MindSpark Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="programs">
+  <div id="ms-public-header"></div>
+
+  <main>
+    <section class="section-pad bg-lavender-ms">
+      <div class="container-ms text-center mx-auto" style="max-width:780px;">
+        <span class="badge-demo mb-2">Configurable Sample Curriculum</span>
+        <h1 class="display-3 fw-black mb-3 gs-hero-stagger">Find the Right Learning Level for Your Child.</h1>
+        <p class="lead text-secondary-ms mb-0">Explore our 6 Abacus levels and 6 Vedic Mathematics modules. All levels, durations, and sample fees shown are configurable demonstration structures.</p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container-ms">
+        <!-- Filters -->
+        <div class="ms-card p-4 mb-5" style="background:var(--bg-surface-alt);">
+          <div class="row g-3 align-items-end">
+            <div class="col-sm-6 col-lg-3">
+              <label class="form-label small fw-bold">Program Type</label>
+              <select id="flt-type" class="form-select">
+                <option value="all">All Programs</option>
+                <option value="Abacus">Abacus Programs</option>
+                <option value="Vedic Maths">Vedic Mathematics</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <label class="form-label small fw-bold">Learning Level</label>
+              <select id="flt-level" class="form-select">
+                <option value="all">All Levels</option>
+                <option value="Level 1">Level 1</option>
+                <option value="Level 2">Level 2</option>
+                <option value="Level 3">Level 3</option>
+                <option value="Level 4">Level 4</option>
+                <option value="Level 5">Level 5</option>
+                <option value="Level 6">Level 6</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <label class="form-label small fw-bold">Age Group</label>
+              <select id="flt-age" class="form-select">
+                <option value="all">All Ages</option>
+                <option value="5-7">5–7 Years</option>
+                <option value="6-8">6–8 Years</option>
+                <option value="7-10">7–10 Years</option>
+                <option value="8-12">8–12 Years</option>
+                <option value="9-14">9–14 Years</option>
+                <option value="10-15">10–15 Years</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <label class="form-label small fw-bold">Learning Mode</label>
+              <select id="flt-mode" class="form-select">
+                <option value="all">All Modes</option>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline / Center</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="fw-bold text-secondary-ms" id="programs-count">Showing 12 Programs</div>
+          <button type="button" id="flt-reset" class="btn-ms btn-ms-outline py-2 px-3">Reset Filters</button>
+        </div>
+
+        <div class="row g-4" id="programs-grid"></div>
+
+        <!-- Interactive Program Advisor Split Card -->
+        <div class="mt-5 pt-4">
+          <div class="rounded-5 overflow-hidden border shadow-lg" style="background:var(--bg-surface);">
+            <div class="row g-0">
+              <div class="col-lg-5 p-4 p-lg-5 text-white d-flex flex-column justify-content-between" style="background:linear-gradient(155deg,#5736A8 0%,#25233A 100%);">
+                <div>
+                  <div class="small fw-bold text-yellow text-uppercase mb-2" style="letter-spacing:0.14em;">Which Program Is Right For You?</div>
+                  <h2 class="display-6 text-white fw-black mb-3">Find a useful starting point.</h2>
+                  <p class="small opacity-75 mb-4">Answer a few short questions for guidance on the Abacus or Vedic Maths level that may best match your child's current stage.</p>
+                </div>
+                <div class="p-3 rounded-4 small" style="border:1.5px solid rgba(255,200,61,0.5);color:#FFC83D;">
+                  Guidance only — final level placement is discussed individually during your free demo session.
+                </div>
+              </div>
+
+              <div class="col-lg-7 p-4 p-lg-5">
+                <form id="prog-advisor-form">
+                  <div class="mb-3">
+                    <label class="form-label fw-bold small d-block">1. Has your child practiced Abacus or Vedic Maths before?</label>
+                    <div class="d-flex flex-wrap gap-2" data-pill-group="exp">
+                      <button type="button" class="btn-ms btn-ms-outline py-1 px-3 adv-pill" data-val="yes">Yes</button>
+                      <button type="button" class="btn-ms btn-ms-primary py-1 px-3 adv-pill active" data-val="no">No</button>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-bold small d-block">2. Which age group fits your learner?</label>
+                    <div class="d-flex flex-wrap gap-2" data-pill-group="age">
+                      <button type="button" class="btn-ms btn-ms-outline py-1 px-3 adv-pill" data-val="5-7">5–7 yrs</button>
+                      <button type="button" class="btn-ms btn-ms-primary py-1 px-3 adv-pill active" data-val="8-12">8–12 yrs</button>
+                      <button type="button" class="btn-ms btn-ms-outline py-1 px-3 adv-pill" data-val="10-15">10–15 yrs</button>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-bold small d-block">3. Preferred learning mode?</label>
+                    <div class="d-flex flex-wrap gap-2" data-pill-group="mode">
+                      <button type="button" class="btn-ms btn-ms-primary py-1 px-3 adv-pill active" data-val="Online">Online</button>
+                      <button type="button" class="btn-ms btn-ms-outline py-1 px-3 adv-pill" data-val="Offline">In-Center</button>
+                      <button type="button" class="btn-ms btn-ms-outline py-1 px-3 adv-pill" data-val="Either">Not sure</button>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-bold small">4. What are you mainly interested in?</label>
+                    <select id="adv-interest" class="form-select">
+                      <option value="abacus-l1">Foundation Abacus &amp; Focus</option>
+                      <option value="abacus-l4">Mental Calculation Speed</option>
+                      <option value="vedic-3">Vedic Number Patterns &amp; Shortcuts</option>
+                      <option value="vedic-6">Competition Readiness</option>
+                    </select>
+                  </div>
+
+                  <div class="row g-2 mb-4">
+                    <div class="col-12"><label class="form-label fw-bold small mb-1">5. Where are you exploring this program?</label></div>
+                    <div class="col-sm-4"><input type="text" id="adv-city" class="form-control" placeholder="City"></div>
+                    <div class="col-sm-4"><input type="text" id="adv-state" class="form-control" placeholder="State / Region"></div>
+                    <div class="col-sm-4"><input type="text" id="adv-country" class="form-control" value="United States"></div>
+                  </div>
+
+                  <button type="submit" class="btn-ms btn-ms-coral">Show My Recommendation</button>
+                </form>
+                <div id="adv-result" class="mt-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Program Detail Modal -->
+  <div class="modal fade" id="programDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0" style="background:var(--bg-surface);color:var(--text-primary);">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title fw-bold display-font" id="modal-prog-title">Program Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="modal-prog-body"></div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn-ms btn-ms-outline py-2 px-4" data-bs-dismiss="modal">Close</button>
+          <a href="dashboard.html?tab=enroll" id="modal-enroll-btn" class="btn-ms btn-ms-primary py-2 px-4">Enroll in Demo Portal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ms-public-footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/demo-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const all = window.MINDSPARK_DATA.programs;
+      const grid = document.getElementById("programs-grid");
+      const countEl = document.getElementById("programs-count");
+      const fType = document.getElementById("flt-type");
+      const fLevel = document.getElementById("flt-level");
+      const fAge = document.getElementById("flt-age");
+      const fMode = document.getElementById("flt-mode");
+
+      // Check URL params
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("type")) fType.value = params.get("type");
+
+      function renderPrograms() {
+        const list = all.filter((p) => {
+          if (fType.value !== "all" && p.type !== fType.value) return false;
+          if (fLevel.value !== "all" && p.level !== fLevel.value) return false;
+          if (fAge.value !== "all" && p.ageGroup !== fAge.value) return false;
+          if (fMode.value !== "all" && !p.mode.includes(fMode.value)) return false;
+          return true;
+        });
+
+        countEl.textContent = `Showing ${list.length} Program${list.length === 1 ? "" : "s"}`;
+
+        if (!list.length) {
+          grid.innerHTML = `<div class="col-12 text-center py-5"><h4>No matching programs found.</h4><p class="text-muted-ms">Try resetting the filters above.</p></div>`;
+          return;
+        }
+
+        grid.innerHTML = list.map((p) => `
+          <div class="col-md-6 col-lg-4">
+            <div class="ms-card">
+              <div class="ms-card-img-wrap"><img src="${p.image}" alt="${p.name}"></div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge-pill-ms py-1 px-3">${p.type} • ${p.level}</span>
+                <span class="small fw-bold text-coral">${p.ageLabel}</span>
+              </div>
+              <h5 class="mb-2">${p.name}</h5>
+              <p class="small text-secondary-ms mb-3">${p.description}</p>
+              <div class="small mb-3 p-3 rounded-3 bg-surface-alt border">
+                <div><strong>Duration:</strong> ${p.duration} (${p.frequency})</div>
+                <div><strong>Mode:</strong> ${p.mode}</div>
+                <div><strong>Sample Fee:</strong> ${p.fee}</div>
+              </div>
+              <div class="d-flex gap-2 mt-auto">
+                <button type="button" class="btn-ms btn-ms-outline flex-fill py-2 px-3 view-prog-btn" data-id="${p.id}">Details</button>
+                <a href="dashboard.html?tab=enroll&prog=${p.id}" class="btn-ms btn-ms-primary flex-fill py-2 px-3">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        `).join("");
+
+        document.querySelectorAll(".view-prog-btn").forEach((btn) => {
+          btn.addEventListener("click", () => openDetailModal(btn.getAttribute("data-id")));
+        });
+      }
+
+      function openDetailModal(id) {
+        const p = all.find((x) => x.id === id);
+        if (!p) return;
+        document.getElementById("modal-prog-title").textContent = p.name;
+        document.getElementById("modal-enroll-btn").href = `dashboard.html?tab=enroll&prog=${p.id}`;
+        document.getElementById("modal-prog-body").innerHTML = `
+          <div class="row g-4 align-items-center">
+            <div class="col-md-5"><img src="${p.image}" alt="${p.name}" class="rounded-4 w-100"></div>
+            <div class="col-md-7">
+              <span class="badge-demo mb-2">${p.type} • ${p.level}</span>
+              <p class="text-secondary-ms">${p.description}</p>
+              <ul class="small mb-3">
+                ${p.objectives.map((o) => `<li>${o}</li>`).join("")}
+              </ul>
+              <div class="small fw-bold">Duration: ${p.duration} • ${p.frequency} • ${p.mode}</div>
+              <div class="small fw-bold text-purple mt-1">Sample Fee: ${p.fee}</div>
+            </div>
+          </div>
+        `;
+        new bootstrap.Modal(document.getElementById("programDetailModal")).show();
+      }
+
+      [fType, fLevel, fAge, fMode].forEach((el) => el.addEventListener("change", renderPrograms));
+      document.getElementById("flt-reset").addEventListener("click", () => {
+        fType.value = "all"; fLevel.value = "all"; fAge.value = "all"; fMode.value = "all";
+        renderPrograms();
+      });
+
+      renderPrograms();
+      if (params.get("id")) openDetailModal(params.get("id"));
+
+      // Program Advisor Pill Toggles & Recommendation
+      document.querySelectorAll("[data-pill-group]").forEach((grp) => {
+        grp.querySelectorAll(".adv-pill").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            grp.querySelectorAll(".adv-pill").forEach((b) => {
+              b.classList.remove("active", "btn-ms-primary");
+              b.classList.add("btn-ms-outline");
+            });
+            btn.classList.add("active", "btn-ms-primary");
+            btn.classList.remove("btn-ms-outline");
+          });
+        });
+      });
+
+      document.getElementById("prog-advisor-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const progId = document.getElementById("adv-interest").value;
+        const rec = all.find((x) => x.id === progId) || all[0];
+        const mode = document.querySelector('[data-pill-group="mode"] .adv-pill.active')?.getAttribute("data-val") || "Online";
+        document.getElementById("adv-result").innerHTML = `
+          <div class="p-3 rounded-4 border bg-lavender-ms d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div>
+              <div class="small fw-bold text-purple">Suggested Demo Starting Point (${mode})</div>
+              <div class="fw-bold fs-5">${rec.name}</div>
+              <div class="small text-secondary-ms">${rec.duration} • ${rec.fee}</div>
+            </div>
+            <a href="dashboard.html?tab=enroll&prog=${rec.id}" class="btn-ms btn-ms-primary py-2 px-3">Enroll Demo →</a>
+          </div>
+        `;
+      });
+    });
+  </script>
+</body>
+</html>
+
