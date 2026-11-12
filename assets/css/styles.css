@@ -672,6 +672,30 @@ img {
   height: 100%;
 }
 
+/* Inner Page Hero Background Image with High-Contrast Overlay */
+.page-hero-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+.page-hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(37, 35, 58, 0.88) 0%, rgba(87, 54, 168, 0.78) 100%);
+  z-index: 0;
+}
+.page-hero-bg > .container-ms {
+  position: relative;
+  z-index: 1;
+}
+.page-hero-bg h1,
+.page-hero-bg .lead {
+  color: #FFFFFF !important;
+}
+
 /* Home 1 Learning Path Program Cards */
 .h1-prog-card {
   background: var(--bg-surface);
