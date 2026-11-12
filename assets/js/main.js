@@ -118,8 +118,8 @@
             <button type="button" class="ms-icon-btn" data-theme-toggle onclick="toggleMindSparkTheme()" title="Toggle Light/Dark Mode">
               <i data-lucide="moon" style="width:18px;height:18px;"></i>
             </button>
-            <button type="button" class="ms-icon-btn" onclick="toggleMindSparkDir()" title="Switch LTR / RTL">
-              <span data-dir-label>RTL</span>
+            <button type="button" class="ms-icon-btn" data-dir-toggle onclick="toggleMindSparkDir()" title="Switch LTR / RTL" aria-label="Switch LTR / RTL">
+              <i data-lucide="arrow-left-right" style="width:18px;height:18px;"></i>
             </button>
             <a href="login.html" class="btn-ms btn-ms-primary py-2 px-4" data-en="Parent Login" data-ar="دخول ولي الأمر">
               <i data-lucide="user-check" style="width:17px;height:17px;"></i>
@@ -174,7 +174,7 @@
               <span>Theme</span>
             </button>
             <button type="button" class="btn-ms btn-ms-outline flex-fill" onclick="toggleMindSparkDir()">
-              <i data-lucide="languages" style="width:18px;height:18px;"></i>
+              <i data-lucide="arrow-left-right" style="width:18px;height:18px;"></i>
               <span data-dir-label>RTL</span>
             </button>
           </div>
