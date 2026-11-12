@@ -137,7 +137,19 @@
       <div class="ms-mobile-drawer" id="ms-mobile-drawer" aria-hidden="true">
         <div class="d-flex align-items-center justify-content-between">
           <a href="index.html" class="ms-logo-link">
-            <span class="fw-bold fs-5 display-font">MINDSPARK</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none">
+              <rect x="2" y="4" width="44" height="44" rx="12" fill="#5736A8"/>
+              <rect x="10" y="13" width="28" height="26" rx="6" stroke="#FFC83D" stroke-width="2.5"/>
+              <line x1="12" y1="21" x2="36" y2="21" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.75"/>
+              <line x1="12" y1="31" x2="36" y2="31" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.75"/>
+              <circle cx="19" cy="21" r="3.6" fill="#FFC83D"/>
+              <circle cx="29" cy="21" r="3.6" fill="#FF786B"/>
+              <circle cx="23" cy="31" r="3.6" fill="#E8F5FF"/>
+              <circle cx="31" cy="31" r="3.6" fill="#FFC83D"/>
+              <path d="M40 7L41.5 10.5L45 12L41.5 13.5L40 17L38.5 13.5L35 12L38.5 10.5L40 7Z" fill="#FFC83D"/>
+              <text x="56" y="27" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="currentColor" letter-spacing="-0.03em">MINDSPARK</text>
+              <text x="56" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#FF786B" letter-spacing="0.16em">ABACUS &amp; VEDIC MATHS</text>
+            </svg>
           </a>
           <button type="button" class="ms-icon-btn" id="ms-close-drawer" aria-label="Close Menu">
             <i data-lucide="x" style="width:20px;height:20px;"></i>
@@ -203,22 +215,38 @@
         <div class="container-ms">
           <div class="row g-4 pb-5 border-bottom border-secondary border-opacity-25">
             <div class="col-lg-4">
-              <div class="d-flex align-items-center gap-2 mb-3 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40" fill="none">
-                  <rect width="64" height="64" rx="16" fill="#5736A8"/>
-                  <rect x="12" y="14" width="40" height="36" rx="8" stroke="#FFC83D" stroke-width="3.5"/>
-                  <circle cx="24" cy="26" r="5" fill="#FFC83D"/>
-                  <circle cx="38" cy="26" r="5" fill="#FF786B"/>
-                  <circle cx="30" cy="38" r="5" fill="#E8F5FF"/>
+              <a href="index.html" class="ms-logo-link text-white mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none" style="height:46px;width:auto;">
+                  <rect x="2" y="4" width="44" height="44" rx="12" fill="#5736A8"/>
+                  <rect x="10" y="13" width="28" height="26" rx="6" stroke="#FFC83D" stroke-width="2.5"/>
+                  <line x1="12" y1="21" x2="36" y2="21" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.75"/>
+                  <line x1="12" y1="31" x2="36" y2="31" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.75"/>
+                  <circle cx="19" cy="21" r="3.6" fill="#FFC83D"/>
+                  <circle cx="29" cy="21" r="3.6" fill="#FF786B"/>
+                  <circle cx="23" cy="31" r="3.6" fill="#E8F5FF"/>
+                  <circle cx="31" cy="31" r="3.6" fill="#FFC83D"/>
+                  <path d="M40 7L41.5 10.5L45 12L41.5 13.5L40 17L38.5 13.5L35 12L38.5 10.5L40 7Z" fill="#FFC83D"/>
+                  <text x="56" y="27" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" letter-spacing="-0.03em">MINDSPARK</text>
+                  <text x="56" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#FFC83D" letter-spacing="0.16em">ABACUS &amp; VEDIC MATHS</text>
                 </svg>
-                <div>
-                  <div class="fw-bold fs-5 display-font">MINDSPARK ACADEMY</div>
-                  <div class="small text-warning fw-semibold">Think Faster. Calculate Smarter.</div>
-                </div>
-              </div>
+              </a>
               <p class="small opacity-75 mb-3">
                 A modern Abacus &amp; Vedic Mathematics academy helping young learners build focus, number confidence, and joyful mental calculation habits.
               </p>
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="ms-icon-btn" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#FFFFFF;">
+                  <i data-lucide="facebook" style="width:17px;height:17px;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="ms-icon-btn" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#FFFFFF;">
+                  <i data-lucide="instagram" style="width:17px;height:17px;"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="ms-icon-btn" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#FFFFFF;">
+                  <i data-lucide="youtube" style="width:17px;height:17px;"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="ms-icon-btn" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.18);color:#FFFFFF;">
+                  <i data-lucide="linkedin" style="width:17px;height:17px;"></i>
+                </a>
+              </div>
               <span class="badge-demo">Demo Educational Showcase</span>
             </div>
 
