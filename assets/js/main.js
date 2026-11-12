@@ -121,6 +121,10 @@
             <button type="button" class="ms-icon-btn" data-dir-toggle onclick="toggleMindSparkDir()" title="Switch LTR / RTL" aria-label="Switch LTR / RTL">
               <i data-lucide="arrow-left-right" style="width:18px;height:18px;"></i>
             </button>
+            <a href="dashboard.html" class="btn-ms btn-ms-yellow py-2 px-3" data-en="Dashboard" data-ar="لوحة التحكم">
+              <i data-lucide="layout-dashboard" style="width:17px;height:17px;"></i>
+              <span>Dashboard</span>
+            </a>
             <a href="login.html" class="btn-ms btn-ms-primary py-2 px-4" data-en="Parent Login" data-ar="دخول ولي الأمر">
               <i data-lucide="user-check" style="width:17px;height:17px;"></i>
               <span>Parent Login</span>
@@ -178,8 +182,9 @@
               <span data-dir-label>RTL</span>
             </button>
           </div>
+          <a href="dashboard.html" class="btn-ms btn-ms-yellow w-100">Parent Dashboard</a>
           <a href="login.html" class="btn-ms btn-ms-primary w-100">Parent Login</a>
-          <a href="register.html" class="btn-ms btn-ms-yellow w-100">Register Demo Account</a>
+          <a href="register.html" class="btn-ms btn-ms-outline w-100">Register Demo Account</a>
         </div>
       </div>
     `;
