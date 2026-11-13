@@ -423,8 +423,8 @@
       ${scheduleView === "list" ? `
         <div class="dash-stat-card">
           <div class="table-responsive">
-            <table class="table align-middle mb-0">
-              <thead><tr><th>Class</th><th>Child</th><th>Instructor</th><th>Date &amp; Time</th><th>Mode</th><th>Status</th><th></th></tr></thead>
+            <table class="table align-middle mb-0 text-nowrap" style="min-width:650px;">
+              <thead><tr><th>Class</th><th>Child</th><th>Instructor</th><th>Date &amp; Time</th><th>Mode</th><th>Status</th><th>Action</th></tr></thead>
               <tbody>
                 ${schedules.map((s) => `
                   <tr>
@@ -531,7 +531,7 @@
       <div class="dash-stat-card">
         <h5 class="mb-3">Demo Payment History</h5>
         <div class="table-responsive">
-          <table class="table align-middle mb-0">
+          <table class="table align-middle mb-0 text-nowrap" style="min-width:680px;">
             <thead><tr><th>Transaction ID</th><th>Child</th><th>Program</th><th>Date</th><th>Amount</th><th>Status</th><th>Actions</th></tr></thead>
             <tbody>
               ${payments.map((p, idx) => `
@@ -588,11 +588,11 @@
   function renderNotifications(host) {
     const notifs = getNotifs();
     host.innerHTML = `
-      <div class="d-flex justify-content-between align-items-center mb-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
         <div><span class="badge-demo mb-1">Demo Alerts</span><h4 class="mb-0">Notifications</h4></div>
-        <div class="d-flex gap-2">
-          <button class="btn-ms btn-ms-outline py-2 px-3" id="mark-all-read">Mark All Read</button>
-          <button class="btn-ms btn-ms-coral py-2 px-3" id="clear-notifs">Clear Demo Notifications</button>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn-ms btn-ms-outline py-2 px-3" id="mark-all-read" style="font-size:0.85rem;">Mark All Read</button>
+          <button class="btn-ms btn-ms-coral py-2 px-3" id="clear-notifs" style="font-size:0.85rem;">Clear All</button>
         </div>
       </div>
       <div class="d-flex flex-column gap-3">

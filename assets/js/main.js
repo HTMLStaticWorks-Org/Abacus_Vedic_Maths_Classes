@@ -167,7 +167,6 @@
           <a href="services.html" class="${page === "services" ? "active" : ""}"><span>Services</span><span>→</span></a>
           <a href="programs.html" class="${page === "programs" ? "active" : ""}"><span>Programs</span><span>→</span></a>
           <a href="competitions.html" class="${page === "competitions" ? "active" : ""}"><span>Competitions</span><span>→</span></a>
-          <a href="franchise.html" class="${page === "franchise" ? "active" : ""}"><span>Franchise &amp; Partner</span><span>→</span></a>
           <a href="contact.html" class="${page === "contact" ? "active" : ""}"><span>Contact &amp; Free Demo</span><span>→</span></a>
         </div>
 

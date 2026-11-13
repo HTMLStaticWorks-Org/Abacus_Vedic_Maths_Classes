@@ -769,52 +769,96 @@ img {
   border-radius: 50%;
 }
 .mentor-name {
-  min-height: 48px;
+  min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .mentor-role {
-  min-height: 38px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .mentor-qual {
-  min-height: 34px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .mentor-spec {
-  min-height: 44px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 .service-card-badge {
-  min-height: 28px;
+  min-height: 44px;
   display: flex;
   align-items: center;
 }
 .service-card-title {
-  min-height: 52px;
+  min-height: 72px;
   display: flex;
   align-items: center;
 }
 .service-card-desc {
-  min-height: 60px;
+  min-height: 96px;
   display: flex;
   align-items: flex-start;
 }
 .service-card-benefit {
-  min-height: 42px;
+  min-height: 56px;
   display: flex;
   align-items: center;
+}
+
+/* Contact Page Top Cards Alignment */
+.contact-info-title {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+.contact-info-desc {
+  min-height: 54px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Testimonials Card Alignment */
+.testimonial-quote {
+  min-height: 125px;
+  display: flex;
+  align-items: flex-start;
+}
+.testimonial-author-box {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+}
+.testimonial-author-name {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.testimonial-author-child {
+  min-height: 38px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Table Responsive Horizontal Scrolling & Non-wrapping Headers */
+.table-responsive table {
+  min-width: 640px;
+}
+.table-responsive th,
+.table-responsive td {
+  white-space: nowrap !important;
+  vertical-align: middle !important;
 }
 
 /* Footer Social Icon Hover Effects */
@@ -1830,6 +1874,19 @@ img {
   }
   .dash-main {
     margin-inline-start: 0;
+  }
+  #dash-open-sidebar {
+    display: inline-flex !important;
+  }
+  #dash-close-sidebar {
+    display: inline-flex !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  #dash-open-sidebar,
+  #dash-close-sidebar {
+    display: none !important;
   }
 }
 
