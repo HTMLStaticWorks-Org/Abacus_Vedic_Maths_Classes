@@ -672,28 +672,196 @@ img {
   height: 100%;
 }
 
-/* Inner Page Hero Background Image with High-Contrast Overlay */
+/* Inner Page Hero Background Image with High-Contrast Overlay & Unified Height */
 .page-hero-bg {
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 .page-hero-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(125deg, rgba(37, 35, 58, 0.88) 0%, rgba(87, 54, 168, 0.78) 100%);
+  background: linear-gradient(125deg, rgba(37, 35, 58, 0.88) 0%, rgba(87, 54, 168, 0.82) 100%);
   z-index: 0;
 }
 .page-hero-bg > .container-ms {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .page-hero-bg h1,
 .page-hero-bg .lead {
   color: #FFFFFF !important;
+}
+
+/* Badge Contrast Protection across all dark surfaces & Dark Mode */
+.badge-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(255, 200, 61, 0.22);
+  color: #8A5D00;
+  border: 1px solid transparent;
+}
+
+.badge-on-dark,
+.page-hero-bg .badge-demo,
+.page-hero-bg .badge-pill-ms,
+.ms-footer .badge-demo,
+.auth-visual .badge-demo,
+.soroban-topbar .badge-demo,
+.soroban-frame .badge-demo,
+.dash-sidebar .badge-demo,
+.dash-banner .badge-demo,
+.dash-hero-banner .badge-demo,
+.dash-content [style*="background:linear-gradient"] .badge-demo,
+.dash-content [style*="background: linear-gradient"] .badge-demo,
+[style*="background:linear-gradient"] .badge-demo,
+[style*="background: linear-gradient"] .badge-demo {
+  background: rgba(255, 200, 61, 0.28) !important;
+  color: #FFC83D !important;
+  border: 1px solid rgba(255, 200, 61, 0.55) !important;
+  font-weight: 800 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45) !important;
+}
+
+[data-theme="dark"] .badge-demo {
+  background: rgba(255, 200, 61, 0.22) !important;
+  color: #FFD466 !important;
+  border: 1px solid rgba(255, 200, 61, 0.45) !important;
+  font-weight: 800 !important;
+}
+
+/* Dashboard Profile name contrast in Dark Mode */
+#dash-profile-shortcut,
+#dash-profile-shortcut span,
+#dash-topbar-name {
+  color: var(--text-primary) !important;
+}
+[data-theme="dark"] #dash-profile-shortcut,
+[data-theme="dark"] #dash-profile-shortcut span,
+[data-theme="dark"] #dash-topbar-name {
+  color: #F7F6FC !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Grid & Text Alignment Helpers */
+.mentor-card-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  object-position: center;
+  margin-inline: auto;
+  display: block;
+  border-radius: 50%;
+}
+.mentor-name {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mentor-role {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mentor-qual {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mentor-spec {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service-card-badge {
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+}
+.service-card-title {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+.service-card-desc {
+  min-height: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+.service-card-benefit {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+/* Footer Social Icon Hover Effects */
+.ms-footer .ms-icon-btn {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease;
+}
+.ms-footer .ms-icon-btn:hover {
+  background: var(--ms-yellow) !important;
+  border-color: var(--ms-yellow) !important;
+  color: #25233A !important;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 200, 61, 0.45);
+}
+
+/* Floating Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  inset-inline-end: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ms-purple);
+  color: #FFFFFF;
+  border: 2px solid var(--ms-yellow);
+  box-shadow: 0 10px 26px rgba(87, 54, 168, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1025;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease;
+}
+.back-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top-btn:hover {
+  background: var(--ms-yellow);
+  color: #25233A;
+  border-color: var(--ms-yellow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
 }
 
 /* Home 1 Learning Path Program Cards */

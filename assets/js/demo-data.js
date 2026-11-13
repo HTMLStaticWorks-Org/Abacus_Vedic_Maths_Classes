@@ -20,7 +20,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$140 / term (Sample)",
       feeAmount: 140,
-      image: "ab/Abacus-Classes-in-Bangalore.jpg",
+      image: "ab/kati-hoehl-i3rBo3b9QbA-unsplash.jpg",
       objectives: [
         "Introduction to the Soroban abacus frame and bead values",
         "Finger-gymnastics & two-hand bead manipulation",
@@ -41,7 +41,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$150 / term (Sample)",
       feeAmount: 150,
-      image: "ab/Abacus-768x511.webp",
+      image: "ab/alexandr-popadin-SgqSVVo7lMo-unsplash.jpg",
       objectives: [
         "Small friend (5-complement) formulas",
         "Two-digit bead calculations with rhythm",
@@ -62,7 +62,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$165 / term (Sample)",
       feeAmount: 165,
-      image: "ab/abacus_img.webp",
+      image: "ab/oleksii-piekhov-IflQrze1wMM-unsplash.jpg",
       objectives: [
         "Big friend (10-complement) & combined formulas",
         "Rapid 2-digit mental addition & subtraction",
@@ -83,7 +83,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$180 / term (Sample)",
       feeAmount: 180,
-      image: "ab/crissy-jarvis-gdL-UZfnD3I-unsplash.jpg",
+      image: "ab/dong-xie-7ka-Gn4JtQc-unsplash.jpg",
       objectives: [
         "2-digit × 1-digit multiplication on abacus & mentally",
         "3-digit addition & subtraction chains",
@@ -104,7 +104,7 @@ window.MINDSPARK_DATA = {
       mode: "Online",
       fee: "$200 / term (Sample)",
       feeAmount: 200,
-      image: "ab/dong-xie-7ka-Gn4JtQc-unsplash.jpg",
+      image: "ab/yucel-m-yhVDhfE3-eU-unsplash.jpg",
       objectives: [
         "Multi-digit multiplication & division on Soroban",
         "Decimal place handling & mental Anzan",
@@ -125,7 +125,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$220 / term (Sample)",
       feeAmount: 220,
-      image: "ab/pexels-keira-burton-6624378.jpg",
+      image: "ab/math/saad-ahmad-BQLw0OrA6F4-unsplash.jpg",
       objectives: [
         "High-speed Flash Anzan (rapid visual sums)",
         "4-digit operations & multi-step mental chains",
@@ -148,7 +148,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$150 / term (Sample)",
       feeAmount: 150,
-      image: "ab/math/Vedic-Maths.png",
+      image: "ab/math/1750416185.webp",
       objectives: [
         "Base-10 complements & digital roots",
         "Left-to-right mental addition",
@@ -169,7 +169,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$165 / term (Sample)",
       feeAmount: 165,
-      image: "ab/math/Vedic Maths2.jpg",
+      image: "ab/math/Vedic-Maths.png",
       objectives: [
         "All from 9 and the last from 10 subtraction",
         "Rapid doubling, halving & rounding strategies",
@@ -190,7 +190,7 @@ window.MINDSPARK_DATA = {
       mode: "Online",
       fee: "$175 / term (Sample)",
       feeAmount: 175,
-      image: "ab/math/Why-Vedic-Maths-is-Changing-the-Way-Students-Learn-Mathematics.jpg",
+      image: "ab/math/Vedic Maths2.jpg",
       objectives: [
         "Vertically & Crosswise (Urdhva Tiryagbhyam) 2×2 & 3×3",
         "Special multipliers (11, 99, 25, 125)",
@@ -211,7 +211,7 @@ window.MINDSPARK_DATA = {
       mode: "Online & Offline",
       fee: "$185 / term (Sample)",
       feeAmount: 185,
-      image: "ab/math/pexels-katerina-holmes-5905442.jpg",
+      image: "ab/math/images.jpg",
       objectives: [
         "Flag method (Dhvajanka) straight division",
         "Nikhilam division near powers of 10",
@@ -232,7 +232,7 @@ window.MINDSPARK_DATA = {
       mode: "Online",
       fee: "$195 / term (Sample)",
       feeAmount: 195,
-      image: "ab/math/pexels-anastasia-shuraeva-8465500.jpg",
+      image: "ab/math/pexels-dione-neris-563567049-16825355.jpg",
       objectives: [
         "Squares, cubes, square roots & cube roots",
         "Algebraic pattern shortcuts & linear equations",
@@ -272,7 +272,7 @@ window.MINDSPARK_DATA = {
       level: "Levels 1–6",
       eligibility: "Ages 5–15 (Enrolled & Guest Demo)",
       mode: "Hybrid (Center & Live Online)",
-      image: "ab/pexels-keira-burton-6624378.jpg",
+      image: "ab/gvz-42-z47okydJjGs-unsplash.jpg",
       summary: "Friendly multi-round abacus & mental visualization championship celebrating accuracy and steady focus."
     },
     {
@@ -283,7 +283,7 @@ window.MINDSPARK_DATA = {
       level: "Levels 2–5",
       eligibility: "Ages 7–14",
       mode: "Live Online Arena",
-      image: "ab/note-thanun-IiCujDqXxSw-unsplash.jpg",
+      image: "ab/math/pexels-artempodrez-8087931.jpg",
       summary: "Timed mental arithmetic sprints designed to build confidence in a supportive, encouraging format."
     },
     {
@@ -294,7 +294,7 @@ window.MINDSPARK_DATA = {
       level: "Vedic Levels 1–6",
       eligibility: "Ages 8–15",
       mode: "In-Center Showcase",
-      image: "assets/images/vedic-maths.svg",
+      image: "ab/math/Why-Vedic-Maths-is-Changing-the-Way-Students-Learn-Mathematics.jpg",
       summary: "Creative calculation challenge highlighting multi-digit shortcuts, squares, and number patterns."
     },
     {
@@ -305,7 +305,7 @@ window.MINDSPARK_DATA = {
       level: "All Levels",
       eligibility: "Ages 6–15",
       mode: "Online Timed Portal",
-      image: "ab/kati-hoehl-i3rBo3b9QbA-unsplash.jpg",
+      image: "ab/math/pexels-mikhail-nilov-8923996.jpg",
       summary: "Fast-paced, age-bracketed calculation rounds where every participant earns a digital milestone badge."
     }
   ],
@@ -327,7 +327,7 @@ window.MINDSPARK_DATA = {
       specialty: "Mental Anzan & Early Childhood Number Sense",
       initials: "AD",
       color: "#5736A8",
-      photo: "https://images.pexels.com/photos/8423062/pexels-photo-8423062.jpeg?auto=compress&cs=tinysrgb&w=600"
+      photo: "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       name: "Rohan Kulkarni (Sample Profile)",
@@ -353,21 +353,25 @@ window.MINDSPARK_DATA = {
     {
       parent: "Priya Nair (Demo Review)",
       childInfo: "Parent of Aarav • Level 4 Abacus",
+      photo: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote: "Aarav used to hesitate with simple subtraction. After two terms of MindSpark's structured bead visualization, he genuinely looks forward to math practice."
     },
     {
       parent: "David & Sarah Chen (Demo Review)",
       childInfo: "Parents of Chloe • Vedic Maths Level 2",
+      photo: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote: "The weekly parent progress notes make it so easy to see what Chloe is practicing. Her focus during homework has noticeably improved."
     },
     {
       parent: "Fatima Al-Mansoor (Demo Review)",
       childInfo: "Parent of Zaid • Level 3 Abacus",
+      photo: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote: "Warm instructors, small groups, and zero pressure. Zaid loved participating in his first winter demo challenge!"
     },
     {
       parent: "Marcus Bennett (Demo Review)",
       childInfo: "Parent of Liam • Foundation Abacus",
+      photo: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=300",
       quote: "The interactive practice games keep learning playful without feeling noisy. Great balance of structure and encouragement."
     }
   ]

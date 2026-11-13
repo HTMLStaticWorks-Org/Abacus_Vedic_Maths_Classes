@@ -252,7 +252,7 @@
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
               </div>
-              <span class="badge-demo">Demo Educational Showcase</span>
+              <span class="badge-demo badge-on-dark">Demo Educational Showcase</span>
             </div>
 
             <div class="col-6 col-lg-2">
@@ -384,6 +384,30 @@
       }, { threshold: 0.35 });
       counters.forEach((c) => obs.observe(c));
     }
+
+    // Back to Top Floating Button
+    let btt = document.getElementById("ms-back-to-top");
+    if (!btt) {
+      btt = document.createElement("button");
+      btt.id = "ms-back-to-top";
+      btt.className = "back-to-top-btn";
+      btt.setAttribute("type", "button");
+      btt.setAttribute("aria-label", "Back to top");
+      btt.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`;
+      document.body.appendChild(btt);
+    }
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btt.classList.add("show");
+      } else {
+        btt.classList.remove("show");
+      }
+    }, { passive: true });
+
+    btt.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 
   // 6. Selective Three.js Background on Home 2

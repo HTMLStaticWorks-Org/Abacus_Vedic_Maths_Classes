@@ -91,9 +91,9 @@
     const notifs = getNotifs().slice(0, 3);
 
     host.innerHTML = `
-      <div class="p-4 rounded-4 mb-4 text-white d-flex flex-wrap justify-content-between align-items-center gap-3" style="background:linear-gradient(135deg,#5736A8,#3E2382);">
+      <div class="dash-banner p-4 rounded-4 mb-4 text-white d-flex flex-wrap justify-content-between align-items-center gap-3" style="background:linear-gradient(135deg,#5736A8,#3E2382);">
         <div>
-          <span class="badge-demo mb-2">Demo Parent Overview</span>
+          <span class="badge-demo badge-on-dark mb-2">Demo Parent Overview</span>
           <h3 class="text-white mb-1">Welcome, ${auth.parentName}!</h3>
           <p class="small opacity-75 mb-0">Here is your family's sample learning summary, upcoming classes, and quick actions.</p>
         </div>

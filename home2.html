@@ -636,12 +636,12 @@
       if (instHost) {
         instHost.innerHTML = window.MINDSPARK_DATA.instructors.map((ins) => `
           <div class="col-md-4">
-            <div class="ms-card text-center align-items-center">
-              <img src="${ins.photo}" alt="${ins.name}" onerror="this.onerror=null;this.src='assets/images/avatar-parent.svg';" class="rounded-circle mb-3 border border-3" style="width:96px;height:96px;object-fit:cover;object-position:top;border-color:${ins.color}!important;">
-              <h5 class="mb-1">${ins.name}</h5>
-              <div class="small fw-bold text-purple mb-2">${ins.role}</div>
-              <div class="small text-muted-ms mb-2">${ins.qualification}</div>
-              <p class="small text-secondary-ms mb-0">${ins.specialty}</p>
+            <div class="ms-card text-center align-items-center h-100">
+              <img src="${ins.photo}" alt="${ins.name}" onerror="this.onerror=null;this.src='assets/images/avatar-parent.svg';" class="mentor-card-img mb-3 border border-3" style="border-color:${ins.color}!important;">
+              <h5 class="mentor-name mb-1">${ins.name}</h5>
+              <div class="mentor-role small fw-bold text-purple mb-2">${ins.role}</div>
+              <div class="mentor-qual small text-muted-ms mb-2">${ins.qualification}</div>
+              <p class="mentor-spec small text-secondary-ms mb-0">${ins.specialty}</p>
             </div>
           </div>
         `).join("");
