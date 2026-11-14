@@ -679,20 +679,27 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
-  min-height: 420px;
-  height: 420px;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  min-height: 480px;
+  height: auto;
+  padding-top: clamp(64px, 7vw, 96px) !important;
+  padding-bottom: clamp(64px, 7vw, 96px) !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .page-hero-bg {
+    min-height: 460px;
+    padding-top: clamp(56px, 6vw, 76px) !important;
+    padding-bottom: clamp(56px, 6vw, 76px) !important;
+  }
 }
 @media (max-width: 768px) {
   .page-hero-bg {
     min-height: 380px;
-    height: auto;
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
 }
 .page-hero-bg::before {
