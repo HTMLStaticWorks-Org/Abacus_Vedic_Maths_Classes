@@ -614,17 +614,21 @@
       });
       nextQuestion();
 
-      // Competition Arena Cards (Home 2 uses ab/math/ photos)
+      // Competition Arena Cards (Home 2 uses dedicated ab/math/ photos not in Home 1)
       const compHost = document.getElementById("h2-comp-cards");
       if (compHost) {
-        const h2CompImgs = ["ab/math/pexels-anastasia-shuraeva-8465500.jpg", "ab/math/pexels-artempodrez-8087931.jpg", "ab/math/pexels-mikhail-nilov-8923996.jpg"];
+        const h2CompImgs = [
+          "ab/math/Why-Vedic-Maths-is-Changing-the-Way-Students-Learn-Mathematics.jpg",
+          "ab/math/erwan-hesry-aTpgq-1PdrU-unsplash.jpg",
+          "ab/math/geralt-geometry-1044090_1920.jpg"
+        ];
         compHost.innerHTML = window.MINDSPARK_DATA.competitions.slice(0, 3).map((c, idx) => `
           <div class="col-md-4">
-            <div class="ms-card">
+            <div class="ms-card h-100 d-flex flex-column">
               <div class="ms-card-img-wrap"><img src="${h2CompImgs[idx % h2CompImgs.length]}" alt="${c.name}"></div>
               <span class="badge-demo align-self-start mb-2">${c.date}</span>
-              <h5 class="mb-2">${c.name}</h5>
-              <p class="small text-secondary-ms mb-3">${c.summary}</p>
+              <h5 class="mb-2 d-flex align-items-center" style="min-height:56px;">${c.name}</h5>
+              <p class="small text-secondary-ms mb-3 flex-fill d-flex align-items-start" style="min-height:60px;">${c.summary}</p>
               <a href="competitions.html#comp-register" class="btn-ms btn-ms-primary mt-auto">Register Demo</a>
             </div>
           </div>

@@ -176,14 +176,14 @@
         { title: "8. Parent Progress Guidance", level: "Included for All Families", img: "ab/Untitled-9-1024x768.png", desc: "Dedicated Parent Dashboard with accuracy trends, teacher notes, and schedule tracking.", benefit: "Clear visibility without micromanaging", link: "login.html" }
       ];
       document.getElementById("services-grid").innerHTML = services.map((s) => `
-        <div class="col-md-6 col-lg-3">
+        <div class="col-sm-6 col-xl-3">
           <div class="ms-card h-100 d-flex flex-column">
             <div class="ms-card-img-wrap"><img src="${s.img}" alt="${s.title}"></div>
             <div class="service-card-badge mb-2">
               <span class="badge-pill-ms py-1 px-3" style="font-size:0.75rem;">${s.level}</span>
             </div>
             <h5 class="service-card-title mb-2">${s.title}</h5>
-            <p class="service-card-desc small text-secondary-ms mb-2">${s.desc}</p>
+            <p class="service-card-desc small text-secondary-ms mb-2 flex-fill">${s.desc}</p>
             <div class="service-card-benefit small fw-bold text-purple mb-3">Benefit: ${s.benefit}</div>
             <a href="${s.link}" class="btn-ms btn-ms-outline w-100 mt-auto">Explore Program</a>
           </div>
